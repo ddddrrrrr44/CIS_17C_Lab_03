@@ -1,6 +1,6 @@
 # Lab 03 - Linked Lists
 
-This lab implements a singly linked list data structure, introducing pointer manipulation and dynamic node management in C++.
+This lab implements a singly linked list data structure with a focus on the list reversal algorithm, introducing pointer manipulation and dynamic node management in C++.
 
 ## Files in this Directory
 - `google_test/`: Directory containing Google Test files

@@ -1,67 +1,44 @@
-// Lab 03: Linked Lists
-// Implement a singly linked list with Node structure
-// Complete the TODO sections
-// Test with: g++ linked_lists_test.cpp -std=c++17 -I/opt/homebrew/include -L/opt/homebrew/lib -lgtest -lgtest_main -lpthread -o linked_lists_test && ./linked_lists_test
+// linked_lists.cpp
+#include "linked_lists.h"
 
-#include <iostream>
+LinkedList::LinkedList() : head(nullptr), size(0) {}
 
-// TODO: Include <stdexcept> if needed for exceptions
+LinkedList::~LinkedList() {
+    // TODO: Implement destructor to free all nodes
+}
 
-// Node structure
-struct Node {
-    int data;
-    Node* next;
-    // TODO: Constructor for Node
-};
+void LinkedList::insertAtBeginning(int value) {
+    // TODO: Create new node, set next to head, update head, increment size
+}
 
-class LinkedList {
-private:
-    Node* head;
-    size_t size;
+void LinkedList::insertAtEnd(int value) {
+    // TODO: Create new node, find last node, update next, increment size
+}
 
-public:
-    LinkedList() : head(nullptr), size(0) {}
+void LinkedList::deleteValue(int value) {
+    // TODO: Handle head case, traverse and delete node, decrement size
+}
 
-    ~LinkedList() {
-        // TODO: Implement destructor to free all nodes
-    }
+bool LinkedList::search(int value) const {
+    // TODO: Traverse list, return true if found
+}
 
-    void insertAtBeginning(int value) {
-        // TODO: Create new node, set next to head, update head, increment size
-    }
+void LinkedList::print() const {
+    // TODO: Traverse and print each data followed by " -> "
+}
 
-    void insertAtEnd(int value) {
-        // TODO: Create new node, find last node, update next, increment size
-    }
+size_t LinkedList::getSize() const {
+    // TODO: Return size
+}
 
-    void deleteValue(int value) {
-        // TODO: Handle head case, traverse and delete node, decrement size
-    }
+bool LinkedList::isEmpty() const {
+    // TODO: Return true if head is nullptr
+}
 
-    bool search(int value) const {
-        // TODO: Traverse list, return true if found
-    }
+void LinkedList::reverse() {
+    // TODO: Reverse the list using three pointers
+}
 
-    void print() const {
-        // TODO: Traverse and print each data followed by " -> "
-    }
-
-    size_t getSize() const {
-        // TODO: Return size
-    }
-
-    bool isEmpty() const {
-        // TODO: Return true if head is nullptr
-    }
-
-    void reverse() {
-        // TODO: Reverse the list using three pointers
-    }
-};
-
-int main() {
-    // TODO: Test your implementation
-    LinkedList list;
-    std::cout << "Implement and test the LinkedList!" << std::endl;
-    return 0;
+std::vector<int> LinkedList::toVector() const {
+    // TODO: Traverse list and build vector
 }
