@@ -15,6 +15,7 @@ struct Node {
 class LinkedList {
 private:
     Node* head;
+    Node* tail;
     size_t size;
 
 public:
@@ -22,6 +23,7 @@ public:
     ~LinkedList();
     void insertAtBeginning(int value);
     void insertAtEnd(int value);
+    void deleteBeginning();
     void deleteValue(int value);
     bool search(int value) const;
     void print() const;
